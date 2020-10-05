@@ -1,5 +1,6 @@
 class TodolistsController < ApplicationController
   def new
+    puts "作成したキー #{ENV['SECRET_KEY']}"
     @list = List.new
   end
   
